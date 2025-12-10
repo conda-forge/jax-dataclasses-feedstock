@@ -1,5 +1,5 @@
 {% set name = "jax-dataclasses" %}
-{% set version = "1.6.1" %}
+{% set version = "1.6.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/jax_dataclasses-{{ version }}.tar.gz
-  sha256: 2e981517271e9405a13dcb475d73ff60ecd5355be7b3e7b4155612cf168db967
+  sha256: a4a983395c4e7e4e1894f858ccea2d1bd90231184df3cfd231c62b4e9d1dfc49
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install --no-deps --no-build-isolation . -vv
-  number: 1
+  number: 0
 
 requirements:
   host:
